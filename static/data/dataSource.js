@@ -28,3 +28,28 @@ var dataSource = {
     },
   ],
 };
+
+
+    /***** 发布时间：2023-07-03 10:29:07（以最后发布的为准）*****/
+    dataSource['CHENJI-Temple']=undefined;
+    dataSource['CHENJI-Temple2']=undefined;
+    const pub = {
+      title: '你好',
+      content: '<p>请问分awefawefawegasdfefserfsergserg</p>',
+      publishTime: '2023-07-03 10:29:07',
+      category: '辰记发布',
+      noteId: '6'
+    };
+    if(dataSource['辰记发布']) {
+      const note = dataSource['辰记发布'].filter(function(item){ return item.noteId === '6'});
+      if(note && note.length > 0) {
+        note[0].title='你好';
+        note[0].content='<p>请问分awefawefawegasdfefserfsergserg</p>';
+        note[0].publishTime='2023-07-03 10:29:07';
+      } else {
+        dataSource['辰记发布'].push(pub);
+      }
+    }else{
+      dataSource['辰记发布']=[pub];
+    }
+    
