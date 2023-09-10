@@ -137,3 +137,27 @@ var dataSource = {
       dataSource['辰记发布']=[pub];
     }
     
+
+    /***** 发布时间：2023-09-11 00:22:20（以最后发布的为准）*****/
+    dataSource['CHENJI-Temple']=undefined;
+    dataSource['CHENJI-Temple2']=undefined;
+    var pub = {
+      title: '你好',
+      content: `<div class="ql-star-html" data-user="4" data-noteId="6" data-pubTime="1694362936137"><style type="text/css">.ql-star-html{line-height:1.5;font-size:14px;}.ql-star-html p,ol,ul{margin:0;}.ql-star-html blockquote{border-left: 4px solid #ccc;padding-left:16px;margin:0;}.ql-star-html pre{background: #eee;padding:10px;margin:0;}.ql-star-html img{max-width: 100%}</style><p><strong style="font-family: 微软雅黑;font-size: 18px">啊违法违法</strong><br/><br/><span style="color:#e60000">请问分awefawe</span><span style="color:#e60000">faw</span><span style="background-color:#008a00">egasdfefserfser</span><span style="background-color:#008a00">gserg</span><br/><br/></p><p style="text-align:right"><em><u>nihao</u></em></p><ol><li>afwef</li><li>aw<span style="color:#008a00">efawef</span></li><li>awefawef</li></ol><p><br/></p><ul><li>sdffgsgs</li><li>afawef</li><li>aefaw</li></ul><p><br/>尊敬的领导：</p><p style="padding-left:3em">氨酚烷胺违法</p><p style="padding-left:3em">阿伟发</p><p>阿尔法违法<br/></p><blockquote>让他二哥哇</blockquote><p><br/></p><pre data-language="javascript">const a = &#x27;aefwefawef&#x27;;</pre><p><br/><img style="display: block; margin: auto;" width="977" src="http://localhost:8001/files/4-1689301556558.png"/><br/><img style="display: inline; float: right; margin: 0px 0px 1em 1em;" width="189" src="http://localhost:8001/files/4-1689529395229.png"/><br/>wwww<br/>rfer<br/><br/>不管高低<br/>awefawef</p></div>`,
+      publishTime: '2023-09-11 00:22:20',
+      category: '辰记发布',
+      noteId: '6'
+    };
+    if(dataSource['辰记发布']) {
+      const note = dataSource['辰记发布'].filter(function(item){ return item.noteId === '6'});
+      if(note && note.length > 0) {
+        note[0].title=pub.title;
+        note[0].content=pub.content;
+        note[0].publishTime=pub.publishTime;
+      } else {
+        dataSource['辰记发布'].push(pub);
+      }
+    }else{
+      dataSource['辰记发布']=[pub];
+    }
+    
