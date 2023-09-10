@@ -28,3 +28,9 @@ var layout = {
     layout.logo='';
     layout.githubUrl='https://github.com/ludejun/CHENJI';
     
+
+    /***** 发布时间：2023-09-10 22:37:45（以最后发布的为准）*****/
+    layout.homeUrl='';
+    layout.logo='';
+    layout.githubUrl='https://github.com/ludejun/CHENJI';
+    
